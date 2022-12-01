@@ -24,6 +24,25 @@ path+=("$HOME/.local/bin")
 export PATH
 ```
 
+to enter virtualenv
+```bash
+$ pipenv shell
+```
+
+to exit
+```bash
+$ exit
+```
+
+you might run ```deactivate``` accidentally
+this might mess up pipenv. in that case:
+
+```bash
+$ pipenv --venv
+```
+to see venv directory and delete it
+then you can start a new virtualenv again
+
 ## Install pyenv
 
 ```bash
@@ -46,3 +65,12 @@ of course you don't need to switch python version globally. from pyenv docs:
 >
 > pyenv global [version] -- select globally for your user account
 
+
+### Development
+
+```bash
+$ pyenv install 3.10.4
+$ pyenv global 3.10.4
+$ pipenv shell
+$ python3 manage.py runserver
+```
