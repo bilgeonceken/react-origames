@@ -72,5 +72,7 @@ of course you don't need to switch python version globally. from pyenv docs:
 $ pyenv install 3.10.4
 $ pyenv global 3.10.4
 $ pipenv shell
-$ python3 manage.py runserver
+$ pipenv install
+[$ pre-commit install]
+$ python[3] manage.py runserver
 ```
