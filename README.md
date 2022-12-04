@@ -76,3 +76,9 @@ $ pipenv install
 [$ pre-commit install]
 $ python[3] manage.py runserver
 ```
+
+To manually run the pre-commit hook:
+
+```bash
+$ pre-commit run --all-files
+```
