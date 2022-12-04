@@ -1,0 +1,10 @@
+<h2>Log In</h2>
+<!--
+  TODO: Handle styling <ul class="errorlist"> too!
+  Check django forms docs for errorlist
+-->
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Log In</button>
+</form>

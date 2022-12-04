@@ -14,10 +14,37 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import path
 
 from . import views
 urlpatterns = [
     path('', views.home_view, name='home'),
+    path('app', views.app_view, name='app'),
     path('admin/', admin.site.urls),
+    path('login', LoginView.as_view(), name="login"),
+    path('logout', LogoutView.as_view(), name="logout")
+    # path("accounts/", include("django.contrib.auth.urls")),
 ]
+
+"""
+django.contrib.auth.urls provides
+
+# accounts/login/ [name='login']
+# accounts/logout/ [name='logout']
+# accounts/password_change/ [name='password_change']
+# accounts/password_change/done/ [name='password_change_done']
+# accounts/password_reset/ [name='password_reset']
+# accounts/password_reset/done/ [name='password_reset_done']
+# accounts/reset/<uidb64>/<token>/ [name='password_reset_confirm']
+# accounts/reset/done/ [name='password_reset_complete']
+
+Django by default will look within a templates folder called registration for auth templates.
+The login template is called login.html.
+
+Basically is you want to create templates for those view,
+you must do in in templates/registration/
+
+
+
+"""
