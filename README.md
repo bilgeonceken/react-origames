@@ -13,7 +13,7 @@ $ pip install --user pipenv
 
 if
 
-```bash 
+```bash
 $ pipenv
 zsh: command not found: pipenv
 ```
