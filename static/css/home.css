@@ -1,0 +1,23 @@
+html { box-sizing: border-box; }
+*, *::before, *:after { box-sizing: inherit; }
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("/static/images/home.jpg");
+  background-image: url(/static/images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  font-family: OrigamesTitle;
+  font-weight: 200;
+  font-size: 8.9em;
+  line-height: 0.7em;
+  margin: 1px;
+}
+button{ margin-top: 30px; }
+p { font-size: 24px; }
