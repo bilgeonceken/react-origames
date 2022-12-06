@@ -1,0 +1,20 @@
+{% load static %}
+{% block localstatic %}
+  <link rel="stylesheet" href="{% static '/css/_header.css' %}">
+{% endblock localstatic %}
+
+
+{% block header %}
+<header class="main-header">
+  <div class="main-header-left">
+    <div class="main-header-logo"></div>
+    <h3>OriGames</h3>
+  </div>
+  <div class="main-header-right">
+    <div class="main-header-signup-single">
+      <span>Don't have an account?</span>
+      <a href="/signup">Sign Up</a>
+    </div>
+  </div>
+</header>
+{% endblock header %}

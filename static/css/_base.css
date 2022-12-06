@@ -1,6 +1,17 @@
 @font-face {
   font-family: OrigamesTitle;
   src: url("/static/fonts/bourgeois.woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: OrigamesTitle;
+  src: url("/static/fonts/Bourgeois-Light.woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
 }
 @font-face {
   font-family: sailec;
@@ -39,9 +50,8 @@
 }
 
 html { font-family: sailec; }
-/* body { background-image: url("/static/images/svg/contour.svg"); } */
 body {
-background-color: #f5f5ff;
+background-color: #e5e5f7;
 background-size: 10px 10px;
-background-image: repeating-linear-gradient(45deg, #eecac0 0, #eecac0 1px, #f5f5ff 0, #f5f5ff 50%);
+background-image: repeating-linear-gradient(45deg, #444cf700 0, #444cf769 1px, #e5e5f7 0, #e5e5f7 50%);
 }

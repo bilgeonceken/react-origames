@@ -1,23 +1,37 @@
 html { box-sizing: border-box; }
 *, *::before, *:after { box-sizing: inherit; }
-header {
+header { display: none !important; }
+.ssr-main main.landing-header {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("/static/images/home.jpg");
-  background-image: url(/static/images/home.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url("/static/images/svg/contour_blue.svg");
 }
-h1 {
+.ssr-main main.landing-header h1 {
   font-family: OrigamesTitle;
-  font-weight: 200;
   font-size: 8.9em;
   line-height: 0.7em;
   margin: 1px;
 }
-button{ margin-top: 30px; }
-p { font-size: 24px; }
+.ssr-main main.landing-header p { font-size: 24px; }
+.ssr-main main.landing-header a {
+  display: block;
+  text-align: center;
+  background: rgba(0 97 235 / 100%);
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 0 20px;
+  color: white;
+  box-shadow: -1px 2px 5px 0px rgb(0 0 0 / 29%);
+}
+.ssr-main main.landing-header a:hover { background: rgba(0 97 235 / 85%); }
+.ssr-main main.landing-header a:active {
+  background: rgba(0 97 235 / 85%);
+  box-shadow: inset 0px 2px 5px 0px rgb(0 0 0 / 29%);
+}

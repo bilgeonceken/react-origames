@@ -1,0 +1,48 @@
+/* HEADER */
+header.main-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: rgb(255, 255, 255);
+  z-index: 2;
+  box-shadow: rgb(0 0 0 / 25%) 0px 2px 3px;
+}
+
+/* LEFT */
+header.main-header div.main-header-left {
+  display: flex;
+  align-items: center;
+  flex-basis: 124px;
+}
+header.main-header div.main-header-left div.main-header-logo {
+  background-image: url("/static/images/svg/logo.svg");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+header.main-header div.main-header-left h3 {
+  font-family: OrigamesTitle;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 0 6px 0;
+  color: #0061EB;
+}
+
+/* RIGHT */
+header.main-header div.main-header-right div.main-header-signup-single span {
+  font-weight: 300;
+  font-size: 15px;
+}
+header.main-header div.main-header-right div.main-header-signup-single a {
+  font-size: 15px;
+}
