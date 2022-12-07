@@ -36,6 +36,7 @@ header.main-header div.main-header-left h3 {
   margin: 0;
   padding: 0 0 6px 0;
   color: #0061EB;
+  white-space: nowrap;
 }
 
 /* RIGHT */
