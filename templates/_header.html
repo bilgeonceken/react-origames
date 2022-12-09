@@ -11,13 +11,13 @@
   </div>
   <div class="main-header-right">
     {% if request.path == "/login" %}
-      <div class="main-header-registration-single for-login-page">
+      <div class="main-header-registration-single">
         <span>Don't have an account?</span>
         <a href="/signup">Sign up</a>
       </div>
     {% endif %}
     {% if request.path == "/signup" %}
-      <div class="main-header-registration-single for-signup-page">
+      <div class="main-header-registration-single">
         <span>Already have an account?</span>
         <a href="/login">Sign in</a>
       </div>

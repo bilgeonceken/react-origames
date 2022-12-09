@@ -86,3 +86,6 @@ hr {
   border-top: 2px solid #f1f1f1;
   margin: 16px 0;
 }
+.ssr-main {
+  height: calc(100vh - 40px);
+}
