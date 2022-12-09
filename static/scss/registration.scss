@@ -1,0 +1,71 @@
+.ssr-main {
+  padding: 12px;
+
+  div.registration-single-form-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: rgba(11,43,158,0.15) 0px 6px 20px 3px;
+    border-radius: 24px;
+    max-width: 500px;
+    width: 100%;
+    margin: 100px auto;
+
+    div.registration-single-form-wrapper {
+      padding: 24px 30px;
+
+      form {
+        div.field-wrapper {
+          display: flex;
+          flex-direction: column;
+          margin-top: 18px;
+        }
+
+        div.input-wrapper {
+          margin-top: 0.45rem;
+          height: 100%;
+          max-width: 700px;
+
+          input {
+            width: 100%;
+            height: 46px;
+            border: 1px solid rgb(135, 148, 176);
+            border-radius: 8px;
+            padding: 0 12px;
+          }
+        }
+
+        button {
+          display: block;
+          text-align: center;
+          background: rgb(18, 124, 67);
+          border: none;
+          height: 50px;
+          line-height: 50px;
+          font-weight: 300;
+          text-decoration: none;
+          border-radius: 4px;
+          padding: 0 20px;
+          color: white;
+          box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.29);
+          width: 100%;
+          margin-top: 24px;
+
+          &:active {
+            background: rgba(18,124,67,0.85);
+            box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.29);
+          }
+
+          &:hover { background: rgba(18, 124, 67, 0.929); }
+        }
+      }
+
+      ul.errorlist {
+        padding: 0;
+        list-style: none;
+        font-weight: 300;
+        color: rgba(255,24,13,1);
+      }
+    }
+  }
+}

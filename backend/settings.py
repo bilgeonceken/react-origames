@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('secretKey')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True if os.getenv('mode') == "DEVELOPMENT" else False
+DEBUG = True if os.getenv('mode') == 'DEVELOPMENT' else False
 
-ALLOWED_HOSTS = [] if os.getenv('mode') == "DEVELOPMENT" else [os.getenv('apiURL')]
+ALLOWED_HOSTS = [] if os.getenv('mode') == 'DEVELOPMENT' else [os.getenv('apiURL')]
 
 
 # Application definition
@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'league'
 ]
+
+if (os.getenv('mode') == 'DEVELOPMENT'):
+    INSTALLED_APPS.append('django_sass')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

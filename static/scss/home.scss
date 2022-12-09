@@ -1,0 +1,59 @@
+.ssr-main {
+  main.landing-header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/static/images/svg/contour_blue.svg");
+
+    h1 {
+      font-family: OrigamesTitle;
+      font-size: 8.9em;
+      line-height: 0.7em;
+      margin: 1px;
+      font-weight: 400;
+      white-space: nowrap;
+
+      @media (max-width: 614px) {
+        font-size: 6.4em;
+        line-height: 0.6em;
+      }
+      @media (max-width: 380px) {
+        font-size: 4.4em;
+        line-height: 0.6em;
+      }
+    }
+
+    p {
+      font-size: 24px;
+      @media (max-width: 614px) {
+        font-size: 22px;
+      }
+      @media (max-width: 614px) {
+        font-size: 18px;
+      }
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      background: #0061eb;
+      border: none;
+      height: 50px;
+      line-height: 50px;
+      font-family: sans-serif;
+      text-decoration: none;
+      border-radius: 4px;
+      padding: 0 20px;
+      color: white;
+      box-shadow: -1px 2px 5px 0px #979797;
+
+      &:hover { background: rgba(#0061eb, 0.85); }
+      &:active {
+        background: rgba(#0061eb, 0.85);
+        box-shadow: inset 0px 2px 5px 0px #979797;
+      }
+    }
+  }
+}

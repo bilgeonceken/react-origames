@@ -1,0 +1,61 @@
+header.main-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: #fff;
+  z-index: 2;
+  box-shadow: #979797 0px 2px 3px;
+
+  div.main-header-left {
+    display: flex;
+    align-items: center;
+    flex-basis: 124px;
+
+    div.main-header-logo {
+      background-image: url("/static/images/svg/logo.svg");
+      background-repeat: no-repeat;
+      height: 32px;
+      width: 32px;
+      margin-right: 10px;
+    }
+
+    h3.main-header-origames {
+      font-family: OrigamesTitle;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 32px;
+      margin: 0;
+      padding: 0 0 6px 0;
+      color: #0061EB;
+      white-space: nowrap;
+
+      @media (max-width: 402px) {
+        display: none;
+      }
+    }
+  }
+
+  div.main-header-right {
+    div.main-header-signup-single {
+      span {
+        font-weight: 300;
+        font-size: 15px;
+
+        @media (max-width: 482px) {
+          display: none;
+        }
+      }
+
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+}

@@ -77,6 +77,20 @@ $ pipenv install
 $ python[3] manage.py runserver
 ```
 
+To compile sass files:
+```bash
+$ python3 manage.py sass [input file path] [output file path] -g -t compressed
+```
+sass params:
+
+```-g : generate source map```
+
+```--watch : well... watch```
+
+```-t [expanded|nested|compact|compressed] : compression level```
+
+
+
 To manually run the pre-commit hook:
 
 ```bash

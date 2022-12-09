@@ -1,0 +1,88 @@
+@font-face {
+  font-family: OrigamesTitle;
+  src: url("/static/fonts/bourgeois.woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: OrigamesTitle;
+  src: url("/static/fonts/Bourgeois-Light.woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: sailec;
+  src: url("/static/fonts/Sailec-Font/Sailec-Bold.woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: sailec;
+  src: url("/static/fonts/Sailec-Font/Sailec-Medium.woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: sailec;
+  src: url("/static/fonts/Sailec-Font/Sailec-Regular-Italic.woff");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: sailec;
+  src: url("/static/fonts/Sailec-Font/Sailec-Light.woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: sailec;
+  src: url("/static/fonts/Sailec-Font/Sailec-Thin.woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 200;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sailec;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #e5e5f7;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #444cf700 0, #444cf769 1px, #e5e5f7 0, #e5e5f7 50%);
+}
+h1,h2,h3,h4,h5,h6 {
+  color: #031b4e;
+  margin: 0;
+  font-family: OrigamesTitle;
+  font-weight: 300;
+}
+h3 {
+  font-size: 32px;
+  margin: 0 0 16px
+}
+p,span,input,a { color: rgb(77, 91, 124); font-weight: 300;}
+label { color: rgb(0, 105, 255); font-weight: 300; }
+a {
+  color: #0061eb;
+  display: inline-flex;
+  text-decoration: underline;
+  align-items: center;
+  margin: 0 2px;
+}
+hr {
+  color: rgb(214, 220, 234);
+  border: 0;
+  border-top: 2px solid #f1f1f1;
+  margin: 16px 0;
+}

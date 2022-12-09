@@ -9,6 +9,7 @@ python-dotenv = "*"
 flake8 = "*"
 flake8-django = "*"
 pre-commit = "*"
+django-sass = "*"
 
 [dev-packages]
 

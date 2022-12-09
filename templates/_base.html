@@ -10,7 +10,10 @@
     <title>Origames</title>
   </head>
   <body>
-    {% include "_header.html" %}
+    <!-- hide for landing page -->
+    {% if request.path != '/' %}
+      {% include "_header.html" %}
+    {% endif %}
     <div class="ssr-main">
       {% block content %}{% endblock content %}
     </body>
